@@ -1,0 +1,17 @@
+
+  <mat-card class="ff-card" (click)="togglePhoto()">
+    <mat-card-header>
+      <div mat-card-avatar class="header-image" style="background-image: url('/assets/shots/{{firefighter.picture}}');"></div>
+      <mat-card-title>{{firefighter.name}}</mat-card-title>
+      <mat-card-subtitle>{{firefighter.rank}}</mat-card-subtitle>
+    </mat-card-header>
+    <div *ngIf="show" class="parent">
+      <img mat-card-image src="/assets/shots/{{firefighter.picture_alt}}" alt="Firefighter Photo" class="image_alt">      
+      <img mat-card-image src="/assets/shots/{{firefighter.picture}}" alt="Firefighter Photo" class="image_main">      
+    </div>
+    <!-- <mat-card-content>
+      <p>
+        Badge # {{firefighter.badge}}.  {{firefighter.name}} joined in {{firefighter.joined}}.
+      </p>
+    </mat-card-content> -->
+  </mat-card>

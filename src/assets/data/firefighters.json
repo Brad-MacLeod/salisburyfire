@@ -1,0 +1,46 @@
+
+[
+    {
+        "name": "Brad MacLeod",
+        "rank": "Chief",
+        "badge": "9",
+        "joined": "2022-10-31",
+        "picture": "BradleyMacLeod.jpg",
+        "picture_alt": "BradleyMacLeod_alt.jpg"
+    },
+    {
+        "name": "Brad Doucette",
+        "rank": "Captain",
+        "badge": "",
+        "joined": "2022-10-31",
+        "picture": "BradDoucette.jpg"
+    },
+    {
+        "name": "Tim Dryden",
+        "rank": "Captain",
+        "badge": "",
+        "joined": "2022-10-31",
+        "picture": "TimDryden.jpg"
+    },
+    {
+        "name": "Todd McNeil",
+        "rank": "Firefighter",
+        "badge": "",
+        "joined": "2022-10-31",
+        "picture": "_default.jpg"
+    },
+    {
+        "name": "Abby Brewer",
+        "rank": "Firefighter",
+        "badge": "",
+        "joined": "2022-10-31",
+        "picture": "_default.jpg"
+    },
+    {
+        "name": "Stephen Stevens",
+        "rank": "Firefighter",
+        "badge": "",
+        "joined": "2022-10-31",
+        "picture": "_default.jpg"
+    }
+]

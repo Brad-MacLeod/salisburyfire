@@ -1,0 +1,47 @@
+.ff-card {
+    max-width: 250px;
+    
+    margin: 20px 0px 0px 10px;
+    width:250px;
+    
+    cursor: pointer;
+
+  }
+  
+  .header-image {
+    //background-image: url('https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-1/293786889_10166348341280591_2469199376497392388_n.jpg?stp=cp0_dst-jpg_p40x40&_nc_cat=107&ccb=1-7&_nc_sid=7206a8&_nc_ohc=kt9xrPpBGjUAX-QtWlh&_nc_ht=scontent-lga3-1.xx&oh=00_AfBl89--QjDi4cpWN5h-9gOf2qiQB77KOsevkrAhkeoQgw&oe=63A53E7D');
+    background-size: cover;
+  }
+
+  .parent {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .image_main:hover{
+    animation-name: fadeout;
+    animation-duration: 2s; 
+  }
+
+  .image_alt {
+    position: relative;
+    top: 0;
+    left: 0;
+    
+  }
+  .image_main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+  }
+
+  @keyframes fadeout {    
+    from {
+        opacity: 1;
+    }
+    to {      
+      opacity: 0;      
+    }
+}
