@@ -1,1 +1,89 @@
-<p>page-contact works!</p>
+<div class="container">
+        <!-- LEFT SIDE -->
+        <div class="side">
+            <mat-card class="mycard">
+                <mat-card-header>
+                    <div mat-card-avatar><mat-icon>fire_truck</mat-icon></div>
+                    <mat-card-title>Looking to Join</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    
+                    No prior training is needed as training is provided by the Fire Department.  The biggest asset is your time and willingness to learn.  <br>
+                    <div class="expand" (click)="howTo = !howTo"><mat-icon>{{howTo?'do_not_disturb_on':'add_circle'}}</mat-icon> How do I join?</div>
+                    <div *ngIf="howTo">
+                        <Ul>
+                            <LI>Speak with a member of this department directly.
+                            <LI>Reach out to us on our Facebook Page.
+                            <LI>Visit us during our working hours.
+                        </Ul>
+                    </div>
+
+                    <div class="expand" (click)="requirements = !requirements"><mat-icon>{{requirements?'do_not_disturb_on':'add_circle'}}</mat-icon> Requirements</div>
+                    <div *ngIf="requirements">
+                        <ul>
+                            <LI>Requirements are that you live near the fire hall.  (approx less than 5KM)
+                            <LI>Ability to meet 50% of our training night per year.
+                            <LI>Ability to meet 50% of our emergency calls per year.
+                            <LI>Ability to learn and be safe.
+                        </ul>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+
+            <mat-card class="mycard">
+                <mat-card-header>
+                    <div mat-card-avatar><mat-icon>fire_truck</mat-icon></div>
+                    <mat-card-title>Our Address</mat-card-title>
+                </mat-card-header>            
+                <mat-card-content>
+                        Address: 56 Douglas St<br>Salisbury, NB<br>E4J3E3<br>Village Office: (506)372-3230<br>
+                </mat-card-content>
+            </mat-card>
+            <mat-card class="mycard">
+                <mat-card-header>
+                    <div mat-card-avatar><mat-icon>local_fire_department</mat-icon></div>
+                    <mat-card-title>Training Hours</mat-card-title>
+                </mat-card-header>
+                
+                <mat-card-content>
+                    <p>
+                        Monday Evenings 7:30PM to 9:30PM
+                    </p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div class="content">
+            <div class="about">
+                <mat-card class="mycard2">
+                    <mat-card-header>
+                        <div mat-card-avatar class="header-image" style="background-image: url('assets/Salisbury_Fire_Logo_300.png');"></div>
+                        <mat-card-subtitle>ABOUT </mat-card-subtitle>
+                        <mat-card-title>SALISBURY FIRE AND RESCUE</mat-card-title>                    
+                    </mat-card-header>                    
+                    <mat-card-content>
+                        The Salisbury Fire Department is a fully volunteer department consisting of 20+ Fire Fighters.  The mission of our Fire Department is to provide fire protection and rescue services for the citizens and property located in the village of Salisbury as well as surrounding mutual aid areas.<br><br>
+                    </mat-card-content>
+                    <div>
+                        <img mat-card-image src="/assets/truck_early_morning_2048.jpg" alt="Truck Early Morning">                           
+                    </div>
+                </mat-card>
+            </div>
+            <div class="about">
+                <mat-card class="mycard2">
+                    <mat-card-header>
+                        <div mat-card-avatar class="header-image" style="background-image: url('https://salisburynb.ca/wp-content/uploads/2022/03/logo175.png');"></div>
+                        <mat-card-subtitle>ABOUT </mat-card-subtitle>
+                        <mat-card-title>SALISBURY</mat-card-title>                    
+                    </mat-card-header>
+                    <mat-card-content>
+                        The Town of Salisbury (population approx. 2000) is located in Southeast NB.  We are western neighbors to Moncton and Riverview. With the Trans Canada Highway and CN railway passing through our community, the Salisbury Fire Dept has to be ready for any type of emergency. <br><br>
+                        Our coverage area also covers a number of outlying communities such as Riverglade, Colpitts Settlement, Parkindale, Upper Coverdale and Boundary Creek. We are also part of a mutual aid agreement with Petitcodiac, Havelock, Elgin, Penobsquis, Riverview and Moncton.  These neighboring departments assist with larger scale emergencies and water shuttle.  Salisbury returns the favour by responting to neighboring departments emergencies.<br><br>
+                        Since our town does not incorporate a municipal water supply, there are no hydrants, therefore we must rely on local water sources such as ponds or streams and mutual aid. For more information on the Town of Salisbury please <a href="http://www.salisburynb.ca/" title="Town of Salisbury">click here</a> <br><br>
+                    </mat-card-content>
+                    <div>
+                        <img mat-card-image src="/assets/community_2048.jpg" alt="Truck Early Morning">                           
+                    </div>
+                </mat-card>
+            </div>
+        </div>
+</div>

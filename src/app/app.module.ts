@@ -13,6 +13,8 @@ import { ContactComponent } from './contact/contact.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
 import { PageFirefightersComponent } from './page-firefighters/page-firefighters.component';
 import { PageWelcomeComponent } from './page-welcome/page-welcome.component';
 import { PageContactComponent } from './page-contact/page-contact.component';
@@ -48,6 +50,8 @@ import { ItemTruckComponent } from './item-truck/item-truck.component';
     MatButtonModule,
     HttpClientModule,
     MatCardModule,
+    MatGridListModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

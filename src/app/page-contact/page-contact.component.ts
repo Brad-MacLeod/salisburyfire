@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageContactComponent implements OnInit {
 
+  howTo:boolean = false;
+  requirements: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  
 
 }

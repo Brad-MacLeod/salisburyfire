@@ -1,0 +1,62 @@
+.container{
+    display: flex;
+  }
+
+.side{
+  max-width: 400px;
+  min-width: 325px;
+}
+
+.content{
+  flex:1
+}
+
+.about{
+  display: flex;
+  justify-content: center;
+}
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: center;  
+  }
+
+  .mycard{
+    max-width: 300px;
+    
+    margin: 25px;
+  }
+
+  .header-image {
+    //background-image: url('https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-1/293786889_10166348341280591_2469199376497392388_n.jpg?stp=cp0_dst-jpg_p40x40&_nc_cat=107&ccb=1-7&_nc_sid=7206a8&_nc_ohc=kt9xrPpBGjUAX-QtWlh&_nc_ht=scontent-lga3-1.xx&oh=00_AfBl89--QjDi4cpWN5h-9gOf2qiQB77KOsevkrAhkeoQgw&oe=63A53E7D');
+    background-size: cover;
+  }
+
+  .mycard2{
+    margin: 25px;
+    max-width: 900px;
+  }
+
+  a:link {
+    color: white;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: white;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: red;
+  }
+  
+  /* selected link */
+  a:active {
+    color: red;
+  }
+
+  .expand:hover{
+    cursor: pointer;
+  }
