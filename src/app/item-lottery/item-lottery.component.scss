@@ -1,0 +1,38 @@
+.header-image {
+    //background-image: url('https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-1/293786889_10166348341280591_2469199376497392388_n.jpg?stp=cp0_dst-jpg_p40x40&_nc_cat=107&ccb=1-7&_nc_sid=7206a8&_nc_ohc=kt9xrPpBGjUAX-QtWlh&_nc_ht=scontent-lga3-1.xx&oh=00_AfBl89--QjDi4cpWN5h-9gOf2qiQB77KOsevkrAhkeoQgw&oe=63A53E7D');
+    background-size: cover;
+  }
+  
+.card{
+    margin: 25px;
+    width: 800px;
+    min-width: 450px;
+  }
+  
+  .content{
+    height: auto;
+    width: 100%;
+  }
+  
+  .wrapper{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: auto;
+  }
+  
+  .jackpot{
+    font-size: 7vw;
+    margin: 1vw;
+    font-weight: 600;
+    line-height: 1;
+  }
+  
+  .sold{
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+  
+  .buy{
+    padding-left: 2em;
+  }

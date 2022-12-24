@@ -23,6 +23,8 @@ import { PageDrawComponent } from './page-draw/page-draw.component';
 import { PageFleetComponent } from './page-fleet/page-fleet.component';
 import { ItemPersonComponent } from './item-person/item-person.component';
 import { ItemTruckComponent } from './item-truck/item-truck.component';
+import { ItemLotteryComponent } from './item-lottery/item-lottery.component';
+import { ItemFbComponent } from './item-fb/item-fb.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { ItemTruckComponent } from './item-truck/item-truck.component';
     PageDrawComponent,
     PageFleetComponent,
     ItemPersonComponent,
-    ItemTruckComponent, 
+    ItemTruckComponent,
+    ItemLotteryComponent,
+    ItemFbComponent, 
 
   ],
   imports: [

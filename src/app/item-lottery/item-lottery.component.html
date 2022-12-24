@@ -1,0 +1,30 @@
+<mat-card class="card">
+    <mat-card-header>
+        <div mat-card-avatar class="header-image" style="background-image: url('assets/NB5050_150.png');"></div>
+        <mat-card-subtitle>NB 50/50</mat-card-subtitle>
+        <mat-card-title>{{mydraw.name}}</mat-card-title>                    
+    </mat-card-header>                    
+    <mat-card-content class="content">
+        <div class="wrapper">
+            <div class="jackpot">
+                {{formatDollars(mydraw.jackpot)}}
+            </div>
+            
+        </div>
+        <div *ngIf="mydraw.status=='active'" class="wrapper">
+            <div>Sales end {{formatDate(mydraw.endDate)}}</div>
+            <div><mat-card-subtitle align="end" class="sold">Tickets Sold {{mydraw.totalTickets}}</mat-card-subtitle></div>
+        </div>
+        <div *ngIf="mydraw.status!='active'" class="wrapper">
+            Draw is {{mydraw.status}}
+        </div>
+    </mat-card-content>
+    <mat-card-footer *ngIf="mydraw.status=='active'" >
+        <mat-card-actions align="start" class="buy">
+            <button mat-raised-button color="accent" (click)="getURL()">BUY TICKETS</button>                        
+        </mat-card-actions>                    
+    </mat-card-footer>
+    <!-- <div>
+        <img mat-card-image src="/assets/truck_early_morning_2048.jpg" alt="Truck Early Morning">                           
+    </div> -->
+</mat-card>

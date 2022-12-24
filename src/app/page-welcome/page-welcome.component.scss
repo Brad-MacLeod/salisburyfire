@@ -1,25 +1,37 @@
+.container{
+  display: flex;
+}
 
-@use '@angular/material' as mat;
+.content{
+flex:1
+}
 
-@include mat.core();
+.side{
+  height: 100%;
+  //background-color: blue;
+}
 
-$my-primary: mat.define-palette(mat.$indigo-palette, 500);
-$my-accent: mat.define-palette(mat.$indigo-palette, A200, A100, A400);
+.center_content{
+display: flex;
+justify-content: center;
+//background-color: aqua;
+}
 
-$my-theme: mat.define-dark-theme((
- color: (
-   primary: $my-primary,
-   accent: $my-accent,
- ),
- density: 0,
-));
+a:link {
+  color: white;
+}
 
-// Emit theme-dependent styles for common features used across multiple components.
-@include mat.core-theme($my-theme);
+/* visited link */
+a:visited {
+  color: white;
+}
 
-// Emit styles for MatButton based on `$my-theme`. Because the configuration
-// passed to `define-light-theme` omits typography, `button-theme` will not
-// emit any typography styles.
-@include mat.button-theme($my-theme);
+/* mouse over link */
+a:hover {
+  color: red;
+}
 
-// Include the theme mixins for other components you use here.
+/* selected link */
+a:active {
+  color: red;
+}
